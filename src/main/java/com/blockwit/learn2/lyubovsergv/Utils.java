@@ -2,22 +2,21 @@ package com.blockwit.learn2.lyubovsergv;
 
 public class Utils {
 
-    public static void sort(int[] numbers) {
-
-        for (int i = 0; i < numbers.length; i++) {
+    public void sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
             int min = i;
-            for (int j = i + 1; j < numbers.length; j++) {
-                if (numbers[j] < numbers[min]) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[j] < array[min]) {
                     min = j;
                 }
             }
 
-            int temp = numbers[i];
-            numbers[i] = numbers[min];
-            numbers[min] = temp;
+            int temp = array[i];
+            array[i] = array[min];
+            array[min] = temp;
         }
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
     }
 }
