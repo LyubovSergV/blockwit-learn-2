@@ -1,15 +1,10 @@
 package com.blockwit.learn2.lyubovsergv;
 
 public class Helper {
-    int numbers;
 
-    public Helper(int inputNumbers) {
-
-        numbers = inputNumbers;
-    }
-
-    public void printIntArray() {
-        System.out.println(numbers);
-
+    public void printIntArray(int[] arrayOfString) {
+        for (int i = 0; i < arrayOfString.length; i++) {
+            System.out.println(arrayOfString[i]);
+        }
     }
 }

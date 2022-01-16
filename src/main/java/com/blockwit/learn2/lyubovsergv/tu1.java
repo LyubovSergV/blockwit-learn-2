@@ -2,17 +2,9 @@ package com.blockwit.learn2.lyubovsergv;
 
 public class tu1 {
     public static void main(String[] args) {
-        Helper[] numbers = {
-                new Helper(12),
-                new Helper(7),
-                new Helper(89),
-                new Helper(-4),
-                new Helper(8),
-                new Helper(9)
-        };
-
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i].printIntArray();
-        }
+        int[] numbers = {12, 7, 89, -4, 8, 9};
+        System.out.println("Исходный массив");
+        Helper helper = new Helper();
+        helper.printIntArray(numbers);
     }
 }
