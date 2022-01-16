@@ -15,8 +15,5 @@ public class Utils {
             array[i] = array[min];
             array[min] = temp;
         }
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
     }
 }

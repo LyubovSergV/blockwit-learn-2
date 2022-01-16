@@ -10,5 +10,9 @@ public class tu2 {
 
         System.out.println("Отсортированный массив");
         utils.sort(numbers);
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
     }
 }
