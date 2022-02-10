@@ -1,7 +1,7 @@
 package com.blockwit.learn2.lyubovsergv;
 
 public class MyIntArrayList {
-    // int[] x;
+
     int[] elements;
 
     int count;
@@ -21,7 +21,8 @@ public class MyIntArrayList {
 
     public void add(int newValue) {
         if (count == elements.length) {
-            int[] newElements = new int[elements.length + 1];
+            int getRandomNumber = (int) (elements.length * 6 + 1);
+            int[] newElements = new int[getRandomNumber];
             for (int i = 0; i < elements.length; i++) {
                 newElements[i] = elements[i];
             }
@@ -38,8 +39,4 @@ public class MyIntArrayList {
         return 0;
     }
 
-    public int getRandomNumber() {
-        int x = (int) (Math.random() * 6);
-        return x;
-    }
 }
