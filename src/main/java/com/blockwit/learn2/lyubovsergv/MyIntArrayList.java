@@ -19,10 +19,10 @@ public class MyIntArrayList {
         return elements[i];
     }
 
+
     public void add(int newValue) {
         if (count == elements.length) {
-            int getRandomNumber = (int) (elements.length * 6 + 1);
-            int[] newElements = new int[getRandomNumber];
+            int[] newElements = new int[elements.length + 1];
             for (int i = 0; i < elements.length; i++) {
                 newElements[i] = elements[i];
             }
@@ -36,7 +36,8 @@ public class MyIntArrayList {
     }
 
     public int clear() {
-        return 0;
+        count = 0;
+        return count;
     }
 
 }
