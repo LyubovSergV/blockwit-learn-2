@@ -35,9 +35,8 @@ public class MyIntArrayList {
         count++;
     }
 
-    public int clear() {
+    void clear() {
         count = 0;
-        return count;
     }
 
 }

@@ -18,7 +18,6 @@ public class TaskS8T1 {
             System.out.println(myIntArrayList.get(i));
         }
 
-        System.out.println("Очищенный Список");
         myIntArrayList.clear();
     }
 }
