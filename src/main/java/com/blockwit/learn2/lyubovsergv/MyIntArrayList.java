@@ -19,7 +19,6 @@ public class MyIntArrayList {
         return elements[i];
     }
 
-
     public void add(int newValue) {
         if (count == elements.length) {
             int[] newElements = new int[elements.length + 1];
@@ -35,7 +34,7 @@ public class MyIntArrayList {
         count++;
     }
 
-    void clear() {
+    public void clear() {
         count = 0;
     }
 
