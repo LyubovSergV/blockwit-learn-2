@@ -13,9 +13,7 @@ public class TaskS8T3 {
         System.out.println("Список");
         printHelper.printInList(myIntArrayList);
 
-        System.out.println("Очищенный Список");
-        for (int i = 0; i < myIntArrayList.size(); i++) {
-            System.out.println(myIntArrayList.clear());
-        }
+        myIntArrayList.clear();
+
     }
 }
