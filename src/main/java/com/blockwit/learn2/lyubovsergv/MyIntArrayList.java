@@ -38,8 +38,5 @@ public class MyIntArrayList {
         count = 0;
     }
 
-    public int getRandomNumber() {
-        int x = (int) (Math.random() * 6 + 1);
-        return x;
-    }
+
 }
