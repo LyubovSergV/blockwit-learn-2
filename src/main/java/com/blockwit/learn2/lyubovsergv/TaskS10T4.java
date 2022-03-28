@@ -21,7 +21,11 @@ public class TaskS10T4 {
         books.put(bookHashMap5.getISBN(), bookHashMap5.getName());
         books.put(bookHashMap6.getISBN(), bookHashMap6.getName());
 
-        System.out.println(books);
+        for(Map.Entry<Integer, String> pair : books.entrySet())
+        {
+            String value = pair.getValue();
+            System.out.println(value);
+        }
     }
 
 }
